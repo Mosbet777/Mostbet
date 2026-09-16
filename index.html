@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            MY SITE
+        </div>
+
+        <nav class="menu">
+            <a href="#home">Ana səhifə</a>
+            <a href="#about">Haqqımızda</a>
+            <a href="#services">Xidmətlər</a>
+            <a href="#contact">Əlaqə</a>
+        </nav>
+
+        <button class="menu-button" onclick="openMenu()">
+            ☰
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <span class="small-title">
+                    XÜSUSİ TƏKLİF
+                </span>
+
+                <h1>
+                    Xoş gəlmisiniz
+                </h1>
+
+                <p>
+                    Müasir və rahat veb platforma
+                </p>
+
+                <button class="main-button" onclick="goToSite()">
+                    Ətraflı bax
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="about" class="section">
+
+            <h2>Haqqımızda</h2>
+
+            <p>
+                Burada saytınız haqqında məlumat yerləşdirə bilərsiniz.
+            </p>
+
+        </section>
+
+
+        <section id="services" class="section">
+
+            <h2>Xidmətlər</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="card-icon">01</div>
+                    <h3>Xidmət 1</h3>
+                    <p>
+                        Xidmət haqqında qısa məlumat.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">02</div>
+                    <h3>Xidmət 2</h3>
+                    <p>
+                        Xidmət haqqında qısa məlumat.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">03</div>
+                    <h3>Xidmət 3</h3>
+                    <p>
+                        Xidmət haqqında qısa məlumat.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="contact" class="contact">
+
+            <h2>Bizimlə əlaqə</h2>
+
+            <p>
+                Daha ətraflı məlumat üçün keçid edin.
+            </p>
+
+            <button class="main-button" onclick="goToSite()">
+                Keçid et
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2016 My Website
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
