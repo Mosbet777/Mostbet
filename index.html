@@ -4,162 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mostbet</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         1. ƏN ÇOX TƏRİH EDİLƏNLƏR
-         ========================= -->
+<header class="header">
 
+    <div class="logo">MOSTBET</div>
+
+    <nav class="menu">
+        <a href="#home">Ana səhifə</a>
+        <a href="#about">Haqqımızda</a>
+        <a href="#services">Xidmətlər</a>
+        <a href="#contact">Əlaqə</a>
+    </nav>
+
+    <button class="menu-button" onclick="openMenu()">☰</button>
+
+</header>
+
+
+<main>
+
+    <!-- Ən çox oynanan oyunlar -->
     <section class="popular-section">
 
         <div class="popular-header">
 
             <div class="popular-title">
                 <span class="bolt">ϟ</span>
-                <h2>EN ÇOX TƏRİH EDİLƏNLƏR</h2>
+                <h2>ƏN ÇOX OYNANANLAR</h2>
             </div>
 
             <div class="slider-controls">
 
-                <button class="slider-btn" onclick="slideGames(-1)">
-                    ‹
-                </button>
+                <button class="slider-btn" onclick="slideGames(-1)">‹</button>
 
-                <button class="slider-btn" onclick="slideGames(1)">
-                    ›
-                </button>
+                <button class="slider-btn" onclick="slideGames(1)">›</button>
 
                 <button class="all-btn" onclick="showAllGames()">
-                    HEPSİ
-                    <span>»</span>
+                    HAMISI »
                 </button>
 
             </div>
 
         </div>
 
-
-        <!-- OYUNLAR -->
-
         <div class="games-window">
 
             <div class="games-track" id="gamesTrack">
 
-
-                <!-- 1. OYUN -->
-
-                <a href="#" class="game-card"
+                <a href="javascript:void(0)" class="game-card"
                    onclick="selectGame('Pink Clovers XXXL 3x6')">
 
                     <div class="game-image">
-
-                        <img
-                            src="assets/pink-clovers-xxxl-3x6.png"
-                            alt="Pink Clovers XXXL 3x6"
-                        >
-
+                        <img src="assets/pink-clovers-xxxl-3x6.png"
+                             alt="Pink Clovers XXXL 3x6">
                     </div>
 
-                    <h3>
-                        Pink Clovers XXXL 3x6
-                    </h3>
+                    <h3>Pink Clovers XXXL 3x6</h3>
 
                 </a>
 
 
-
-                <!-- 2. OYUN -->
-
-                <a href="#" class="game-card"
+                <a href="javascript:void(0)" class="game-card"
                    onclick="selectGame('Sun of Egypt 2')">
 
                     <div class="game-image">
-
-                        <img
-                            src="assets/sun-of-egypt-2.png"
-                            alt="Sun of Egypt 2"
-                        >
-
+                        <img src="assets/sun-of-egypt-2.png"
+                             alt="Sun of Egypt 2">
                     </div>
 
-                    <h3>
-                        Sun of Egypt 2
-                    </h3>
+                    <h3>Sun of Egypt 2</h3>
 
                 </a>
 
 
-
-                <!-- 3. OYUN -->
-
-                <a href="#" class="game-card"
+                <a href="javascript:void(0)" class="game-card"
                    onclick="selectGame('Burning Coins 100')">
 
                     <div class="game-image">
-
-                        <img
-                            src="assets/burning-coins-100.png"
-                            alt="Burning Coins 100"
-                        >
-
+                        <img src="assets/burning-coins-100.png"
+                             alt="Burning Coins 100">
                     </div>
 
-                    <h3>
-                        Burning Coins 100
-                    </h3>
+                    <h3>Burning Coins 100</h3>
 
                 </a>
 
 
-
-                <!-- 4. OYUN -->
-
-                <a href="#" class="game-card"
+                <a href="javascript:void(0)" class="game-card"
                    onclick="selectGame('Sweet Bonanza')">
 
                     <div class="game-image">
-
-                        <img
-                            src="assets/sweet-bonanza.png"
-                            alt="Sweet Bonanza"
-                        >
-
+                        <img src="assets/sweet-bonanza.png"
+                             alt="Sweet Bonanza">
                     </div>
 
-                    <h3>
-                        Sweet Bonanza
-                    </h3>
+                    <h3>Sweet Bonanza</h3>
 
                 </a>
 
 
-
-                <!-- 5. OYUN -->
-
-                <a href="#" class="game-card"
+                <a href="javascript:void(0)" class="game-card"
                    onclick="selectGame('Sweet Bonanza 1000')">
 
                     <div class="game-image">
-
-                        <img
-                            src="assets/sweet-bonanza-1000.png"
-                            alt="Sweet Bonanza 1000"
-                        >
-
+                        <img src="assets/sweet-bonanza-1000.png"
+                             alt="Sweet Bonanza 1000">
                     </div>
 
-                    <h3>
-                        Sweet Bonanza 1000
-                    </h3>
+                    <h3>Sweet Bonanza 1000</h3>
 
                 </a>
-
 
             </div>
 
@@ -168,228 +127,117 @@
     </section>
 
 
+    <!-- Ana səhifə -->
+    <section id="home" class="hero">
 
-    <!-- =========================
-         2. HEADER
-         ========================= -->
+        <div class="hero-content">
 
-    <header class="header">
+            <span class="small-title">XÜSUSİ TƏKLİF</span>
 
-        <div class="logo">
-            MOSTBET
-        </div>
-
-
-        <nav class="menu">
-
-            <a href="#home">
-                Ana səhifə
-            </a>
-
-            <a href="#about">
-                Haqqımızda
-            </a>
-
-            <a href="#services">
-                Xidmətlər
-            </a>
-
-            <a href="#contact">
-                Əlaqə
-            </a>
-
-        </nav>
-
-
-        <button
-            class="menu-button"
-            onclick="openMenu()"
-        >
-            ☰
-        </button>
-
-    </header>
-
-
-
-    <!-- =========================
-         3. ƏSAS SƏHİFƏ
-         ========================= -->
-
-    <main>
-
-        <section id="home" class="hero">
-
-            <div class="hero-content">
-
-                <span class="small-title">
-                    XÜSUSİ TƏKLİF
-                </span>
-
-                <h1>
-                    Xoş gəlmisiniz
-                </h1>
-
-                <p>
-                    Müasir və rahat veb platforma
-                </p>
-
-                <button
-                    class="main-button"
-                    onclick="goToSite()"
-                >
-                    Ətraflı bax
-                </button>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- =========================
-             4. HAQQIMIZDA
-             ========================= -->
-
-        <section
-            id="about"
-            class="section"
-        >
-
-            <h2>
-                Haqqımızda
-            </h2>
+            <h1>Mostbet-ə xoş gəlmisiniz</h1>
 
             <p>
-                Burada saytınız haqqında məlumat yerləşdirə bilərsiniz.
+                Bonuslar, kampaniyalar və oyunlar haqqında ətraflı məlumat
             </p>
 
-        </section>
+            <button class="main-button" onclick="goToSite()">
+                Ətraflı bax
+            </button>
+
+        </div>
+
+    </section>
 
 
+    <!-- Haqqımızda -->
+    <section id="about" class="section">
 
-        <!-- =========================
-             5. XİDMƏTLƏR
-             ========================= -->
+        <h2>Haqqımızda</h2>
 
-        <section
-            id="services"
-            class="section"
-        >
+        <p>
+            Mostbet haqqında məlumat, kampaniyalar və istifadəçilər üçün
+            təqdim olunan imkanlar burada yerləşdirilir.
+        </p>
 
-            <h2>
-                Xidmətlər
-            </h2>
+    </section>
 
 
-            <div class="cards">
+    <!-- Xidmətlər -->
+    <section id="services" class="section">
 
+        <h2>Xidmətlər</h2>
 
-                <div class="card">
+        <div class="cards">
 
-                    <div class="card-icon">
-                        01
-                    </div>
+            <div class="card">
 
-                    <h3>
-                        Xidmət 1
-                    </h3>
+                <div class="card-icon">01</div>
 
-                    <p>
-                        Xidmət haqqında qısa məlumat.
-                    </p>
+                <h3>Casino</h3>
 
-                </div>
-
-
-
-                <div class="card">
-
-                    <div class="card-icon">
-                        02
-                    </div>
-
-                    <h3>
-                        Xidmət 2
-                    </h3>
-
-                    <p>
-                        Xidmət haqqında qısa məlumat.
-                    </p>
-
-                </div>
-
-
-
-                <div class="card">
-
-                    <div class="card-icon">
-                        03
-                    </div>
-
-                    <h3>
-                        Xidmət 3
-                    </h3>
-
-                    <p>
-                        Xidmət haqqında qısa məlumat.
-                    </p>
-
-                </div>
-
+                <p>
+                    Müxtəlif casino oyunları və xüsusi təkliflər.
+                </p>
 
             </div>
 
-        </section>
+
+            <div class="card">
+
+                <div class="card-icon">02</div>
+
+                <h3>Bonuslar</h3>
+
+                <p>
+                    Aktiv bonuslar və kampaniyalar haqqında məlumat.
+                </p>
+
+            </div>
 
 
+            <div class="card">
 
-        <!-- =========================
-             6. ƏLAQƏ
-             ========================= -->
+                <div class="card-icon">03</div>
 
-        <section
-            id="contact"
-            class="contact"
-        >
+                <h3>Free Spins</h3>
 
-            <h2>
-                Bizimlə əlaqə
-            </h2>
+                <p>
+                    Seçilmiş oyunlar üçün təqdim olunan pulsuz fırlanmalar.
+                </p>
 
-            <p id="selectedGame">
-                Daha ətraflı məlumat üçün keçid edin.
-            </p>
+            </div>
 
-            <button
-                class="main-button"
-                onclick="goToSite()"
-            >
-                Keçid et
-            </button>
+        </div>
 
-        </section>
-
-    </main>
+    </section>
 
 
+    <!-- Əlaqə -->
+    <section id="contact" class="contact">
 
-    <!-- =========================
-         7. FOOTER
-         ========================= -->
+        <h2>Ətraflı məlumat</h2>
 
-    <footer>
-
-        <p>
-            © 2016 My Website
+        <p id="selectedGame">
+            Oyun və bonuslar haqqında ətraflı məlumat üçün keçid edin.
         </p>
 
-    </footer>
+        <button class="main-button" onclick="goToSite()">
+            Keçid et
+        </button>
+
+    </section>
+
+</main>
 
 
+<footer>
 
-    <script src="script.js"></script>
+    <p>© 2026 Mostbet</p>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
