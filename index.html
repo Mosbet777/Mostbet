@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="az">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +12,209 @@
 
 <body>
 
+    <!-- =========================
+         1. ƏN ÇOX TƏRİH EDİLƏNLƏR
+         ========================= -->
+
+    <section class="popular-section">
+
+        <div class="popular-header">
+
+            <div class="popular-title">
+                <span class="bolt">ϟ</span>
+                <h2>EN ÇOX TƏRİH EDİLƏNLƏR</h2>
+            </div>
+
+            <div class="slider-controls">
+
+                <button class="slider-btn" onclick="slideGames(-1)">
+                    ‹
+                </button>
+
+                <button class="slider-btn" onclick="slideGames(1)">
+                    ›
+                </button>
+
+                <button class="all-btn" onclick="showAllGames()">
+                    HEPSİ
+                    <span>»</span>
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- OYUNLAR -->
+
+        <div class="games-window">
+
+            <div class="games-track" id="gamesTrack">
+
+
+                <!-- 1. OYUN -->
+
+                <a href="#" class="game-card"
+                   onclick="selectGame('Pink Clovers XXXL 3x6')">
+
+                    <div class="game-image">
+
+                        <img
+                            src="assets/pink-clovers-xxxl-3x6.png"
+                            alt="Pink Clovers XXXL 3x6"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Pink Clovers XXXL 3x6
+                    </h3>
+
+                </a>
+
+
+
+                <!-- 2. OYUN -->
+
+                <a href="#" class="game-card"
+                   onclick="selectGame('Sun of Egypt 2')">
+
+                    <div class="game-image">
+
+                        <img
+                            src="assets/sun-of-egypt-2.png"
+                            alt="Sun of Egypt 2"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Sun of Egypt 2
+                    </h3>
+
+                </a>
+
+
+
+                <!-- 3. OYUN -->
+
+                <a href="#" class="game-card"
+                   onclick="selectGame('Burning Coins 100')">
+
+                    <div class="game-image">
+
+                        <img
+                            src="assets/burning-coins-100.png"
+                            alt="Burning Coins 100"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Burning Coins 100
+                    </h3>
+
+                </a>
+
+
+
+                <!-- 4. OYUN -->
+
+                <a href="#" class="game-card"
+                   onclick="selectGame('Sweet Bonanza')">
+
+                    <div class="game-image">
+
+                        <img
+                            src="assets/sweet-bonanza.png"
+                            alt="Sweet Bonanza"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Sweet Bonanza
+                    </h3>
+
+                </a>
+
+
+
+                <!-- 5. OYUN -->
+
+                <a href="#" class="game-card"
+                   onclick="selectGame('Sweet Bonanza 1000')">
+
+                    <div class="game-image">
+
+                        <img
+                            src="assets/sweet-bonanza-1000.png"
+                            alt="Sweet Bonanza 1000"
+                        >
+
+                    </div>
+
+                    <h3>
+                        Sweet Bonanza 1000
+                    </h3>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         2. HEADER
+         ========================= -->
+
     <header class="header">
 
         <div class="logo">
             MOSTBET
         </div>
 
+
         <nav class="menu">
-            <a href="#home">Ana səhifə</a>
-            <a href="#about">Haqqımızda</a>
-            <a href="#services">Xidmətlər</a>
-            <a href="#contact">Əlaqə</a>
+
+            <a href="#home">
+                Ana səhifə
+            </a>
+
+            <a href="#about">
+                Haqqımızda
+            </a>
+
+            <a href="#services">
+                Xidmətlər
+            </a>
+
+            <a href="#contact">
+                Əlaqə
+            </a>
+
         </nav>
 
-        <button class="menu-button" onclick="openMenu()">
+
+        <button
+            class="menu-button"
+            onclick="openMenu()"
+        >
             ☰
         </button>
 
     </header>
 
+
+
+    <!-- =========================
+         3. ƏSAS SƏHİFƏ
+         ========================= -->
 
     <main>
 
@@ -49,7 +234,10 @@
                     Müasir və rahat veb platforma
                 </p>
 
-                <button class="main-button" onclick="goToSite()">
+                <button
+                    class="main-button"
+                    onclick="goToSite()"
+                >
                     Ətraflı bax
                 </button>
 
@@ -58,9 +246,19 @@
         </section>
 
 
-        <section id="about" class="section">
 
-            <h2>Haqqımızda</h2>
+        <!-- =========================
+             4. HAQQIMIZDA
+             ========================= -->
+
+        <section
+            id="about"
+            class="section"
+        >
+
+            <h2>
+                Haqqımızda
+            </h2>
 
             <p>
                 Burada saytınız haqqında məlumat yerləşdirə bilərsiniz.
@@ -69,50 +267,104 @@
         </section>
 
 
-        <section id="services" class="section">
 
-            <h2>Xidmətlər</h2>
+        <!-- =========================
+             5. XİDMƏTLƏR
+             ========================= -->
+
+        <section
+            id="services"
+            class="section"
+        >
+
+            <h2>
+                Xidmətlər
+            </h2>
+
 
             <div class="cards">
 
-                <div class="card">
-                    <div class="card-icon">01</div>
-                    <h3>Xidmət 1</h3>
-                    <p>
-                        Xidmət haqqında qısa məlumat.
-                    </p>
-                </div>
 
                 <div class="card">
-                    <div class="card-icon">02</div>
-                    <h3>Xidmət 2</h3>
+
+                    <div class="card-icon">
+                        01
+                    </div>
+
+                    <h3>
+                        Xidmət 1
+                    </h3>
+
                     <p>
                         Xidmət haqqında qısa məlumat.
                     </p>
+
                 </div>
 
+
+
                 <div class="card">
-                    <div class="card-icon">03</div>
-                    <h3>Xidmət 3</h3>
+
+                    <div class="card-icon">
+                        02
+                    </div>
+
+                    <h3>
+                        Xidmət 2
+                    </h3>
+
                     <p>
                         Xidmət haqqında qısa məlumat.
                     </p>
+
                 </div>
+
+
+
+                <div class="card">
+
+                    <div class="card-icon">
+                        03
+                    </div>
+
+                    <h3>
+                        Xidmət 3
+                    </h3>
+
+                    <p>
+                        Xidmət haqqında qısa məlumat.
+                    </p>
+
+                </div>
+
 
             </div>
 
         </section>
 
 
-        <section id="contact" class="contact">
 
-            <h2>Bizimlə əlaqə</h2>
+        <!-- =========================
+             6. ƏLAQƏ
+             ========================= -->
 
-            <p>
+        <section
+            id="contact"
+            class="contact"
+        >
+
+            <h2>
+                Bizimlə əlaqə
+            </h2>
+
+            <p id="selectedGame">
                 Daha ətraflı məlumat üçün keçid edin.
             </p>
 
-            <button class="main-button" onclick="goToSite()">
+            <button
+                class="main-button"
+                onclick="goToSite()"
+            >
                 Keçid et
             </button>
 
@@ -120,6 +372,11 @@
 
     </main>
 
+
+
+    <!-- =========================
+         7. FOOTER
+         ========================= -->
 
     <footer>
 
@@ -130,7 +387,9 @@
     </footer>
 
 
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
